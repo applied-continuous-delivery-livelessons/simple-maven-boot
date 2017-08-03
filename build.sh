@@ -5,5 +5,3 @@ set -e -u
 [[ -d $PWD/maven && ! -d $HOME/.m2 ]] && ln -s $PWD/maven $HOME/.m2
 
 ./mvnw clean install
-mkdir -p ../artifactory
-cp target/simple-maven-*.jar ../artifactory
